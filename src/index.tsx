@@ -1,7 +1,6 @@
 import React from 'react'
 import './common/css/List.css'
 import {getData} from './common/utils/getCovidData'
-import ReactDOM from 'react-dom';
 interface LatestData{
     population:string
     total_case:string
@@ -62,9 +61,3 @@ export default class List extends React.Component<Props,State>{
     )
   }
 }
-ReactDOM.render(
-  <React.StrictMode>
-    <List />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
