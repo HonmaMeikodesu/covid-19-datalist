@@ -22,4 +22,4 @@ class  MyComponent extends React.Component{
 
 ## SnapShot
 
-![demo.png](./public/demo.png)
+![demo.png](http://47.106.250.33/demo.png)
