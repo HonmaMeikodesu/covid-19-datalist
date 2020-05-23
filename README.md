@@ -12,10 +12,24 @@ npm install @honmameiko/covid-19-datalist
 
 ``` javascript
 import React from 'react'
-import List from '@honmameiko/covid-19-datalist'
+import List,{getData} from '@honmameiko/covid-19-datalist'
+function customShowCountry(country){
+  return(
+    <b>{country}</b>
+  )
+}
 class  MyComponent extends React.Component{
+  constructor(props){
+    super(props)
+    this.state={data:{}}
+  }
   render(){
-    <List />
+    <List data={this.state.data} showCountry={customShowCountry} />
+  }
+  componentDidMount(){
+    getData().then(covidData=>{
+      this.setState({data:covidData})
+    })
   }
 }
 ```

@@ -6,7 +6,7 @@
 .pnp.js
 
 # dev
-/react-app-env.d.ts
+./src/react-app-env.d.ts
 
 # testing
 /coverage
