@@ -2,9 +2,18 @@
   display: flex;
   background-color: rgb(130,128,128);
 }
-.header > div{
+.header-title{
   flex: 1;
   text-align: center;
+  line-height: 40px;
+  height: 40px;
+}
+.header-title > div{
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: top;
+}
+.icon{
   line-height: 40px;
   height: 40px;
 }
@@ -18,4 +27,41 @@
   flex: 1;
   text-align: center;
   font-size: 1;
+}
+.page-spliter{
+  margin: 10px 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page{
+  display: block;
+  margin: 5px;
+  list-style:none;
+}
+.page>button{
+  font-size: 20px;
+  padding: 5px;
+  border: 1px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.page>button:hover{
+  transition: all .5s;
+  background-color: rgb(0, 161, 214);
+  color: white;
+}
+.page-active>button{
+  background-color: rgb(0, 161, 214);
+  color: white;
+  border: rgb(221, 221, 221) solid 1px;
+}
+.page-jump{
+  width: 40px;
+  font-size: 20px;
+  text-align: center;
+}
+.page-jump-confirmed{
+  cursor: pointer;
 }

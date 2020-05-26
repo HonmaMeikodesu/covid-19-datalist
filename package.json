@@ -1,6 +1,6 @@
 {
   "name": "@honmameiko/covid-19-datalist",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": false,
   "main": "lib/List.js",
   "author": {

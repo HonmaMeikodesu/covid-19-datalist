@@ -1,4 +1,10 @@
-const DATA_SOURCE_URL='https://covid.ourworldindata.org/data/owid-covid-data.csv'
+// 从第三方仓库获取新冠数据并将数据格式化
+let DATA_SOURCE_URL:string
+if(process.env.NODE_ENV==='development'){
+  DATA_SOURCE_URL='http://localhost:8080/data.csv'
+}else{
+  DATA_SOURCE_URL='https://covid.ourworldindata.org/data/owid-covid-data.csv'
+}
 const LOCATION='location'
 const PUBLISH_DATE='date'
 const POPULATION='population'
